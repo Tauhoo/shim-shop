@@ -1,0 +1,1 @@
+{"version":3,"sources":["index.css"],"names":[],"mappings":"AAAA,EACE,kBAAqB,CACrB,cACF,CAEA,UAEE,QAAW,CACX,SACF","file":"main.a14ca5b6.chunk.css","sourcesContent":["* {\n  font-family: \"Prompt\";\n  font-size: 14px;\n}\n\nbody,\nhtml {\n  margin: 0px;\n  padding: 0px;\n}\n"]}
