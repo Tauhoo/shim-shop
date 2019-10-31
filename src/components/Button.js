@@ -8,9 +8,19 @@ const Container = styled.div`
   position: relative;
   width: max-content;
   height: 45px;
+
+  * {
+    color: #333333;
+    text-decoration: none;
+  }
+
   &:hover {
     div:last-child {
       width: 100%;
+    }
+
+    * {
+      color: #213a8f;
     }
   }
 `
@@ -18,7 +28,7 @@ const Container = styled.div`
 const UnderLine = styled.div`
   position: absolute;
   transition-duration: 0.3s;
-  background-color: black;
+  background-color: #213a8f;
   transform: translate(-50%, -100%);
   height: 5px;
   top: 100%;

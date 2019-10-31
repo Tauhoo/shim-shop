@@ -2,3 +2,9 @@
   font-family: "Prompt";
   font-size: 14px;
 }
+
+body,
+html {
+  margin: 0px;
+  padding: 0px;
+}

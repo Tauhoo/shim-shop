@@ -13,12 +13,16 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   align-items: center;
+  background-color: white;
+  z-index: 1000;
 `
 
-export default () => (
+export default ({ navbarItems }) => (
   <Container>
-    <Button style={{ margin: "0px 15px" }}>ลงทะเบียนเข้าร่วมมาตรการ</Button>
-    <Button style={{ margin: "0px 15px" }}>ขั้นตอนการเข้าร่วม</Button>
-    <Button style={{ margin: "0px 15px" }}>ร้านค้าที่เข้าร่วม</Button>
+    {navbarItems.map(({ label, href }) => (
+      <Button style={{ margin: "0px 15px" }}>
+        <a href={href}>{label}</a>
+      </Button>
+    ))}
   </Container>
 )
