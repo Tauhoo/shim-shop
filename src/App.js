@@ -5,6 +5,9 @@ import RegisterSection from "./components/RegisterSection"
 import BodyContainer from "./components/BodyContainer"
 import DetailSection from "./components/DetailSection"
 import CallList from "./components/CallList"
+import Sponsers from "./components/Sponsers"
+import Footer from "./components/Footer"
+
 import fetchData from "./utils/fetch"
 
 export default class extends Component {
@@ -31,7 +34,9 @@ export default class extends Component {
           <RegisterSection duration={duration}></RegisterSection>
           <DetailSection detail={detail} condition={condition}></DetailSection>
           <CallList style={{ marginTop: "100px" }}></CallList>
+          <Sponsers style={{ margin: "80px 0px" }}></Sponsers>
         </BodyContainer>
+        <Footer></Footer>
       </div>
     )
   }

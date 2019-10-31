@@ -5,6 +5,10 @@ const Container = styled.div`
   display: flex;
   justify-content: center;
   width: 100%;
+  @media (max-width: 450px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `
 
 const Picture = styled.img`
