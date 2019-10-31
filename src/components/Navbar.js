@@ -19,8 +19,8 @@ const Container = styled.div`
 
 export default ({ navbarItems }) => (
   <Container>
-    {navbarItems.map(({ label, href }) => (
-      <Button style={{ margin: "0px 15px" }}>
+    {navbarItems.map(({ label, href }, index) => (
+      <Button style={{ margin: "0px 15px" }} key={index}>
         <a href={href}>{label}</a>
       </Button>
     ))}

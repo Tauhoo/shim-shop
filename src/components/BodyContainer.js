@@ -10,6 +10,8 @@ const Container = styled.div`
 const Wrapper = styled.div`
   width: 100%;
   max-width: 1200px;
+  padding: 0px 20px;
+  box-sizing: border-box;
 `
 export default ({ children }) => (
   <Container>
