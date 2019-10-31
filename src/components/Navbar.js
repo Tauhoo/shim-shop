@@ -15,6 +15,9 @@ const Container = styled.div`
   align-items: center;
   background-color: white;
   z-index: 1000;
+  @media (max-width: 470px) {
+    display: none;
+  }
 `
 
 export default ({ navbarItems }) => (

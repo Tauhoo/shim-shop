@@ -50,7 +50,6 @@ const Bottom = styled.div`
   grid-gap: 10px;
   max-width: 1200px;
   width: 100%;
-  padding: 20px;
   box-sizing: border-box;
 
   > * {
@@ -65,6 +64,7 @@ const Bottom = styled.div`
   @media (max-width: 450px) {
     grid-template-columns: 1fr;
     justify-items: flex-start;
+    padding: 0px 20px;
   }
 `
 
@@ -73,7 +73,7 @@ const BottomCenter = styled.div`
   justify-content: center;
   width: 100%;
   background-color: #213a8f;
-  padding: 20px 0px;
+  padding: 10px 0px;
   box-sizing: border-box;
 `
 

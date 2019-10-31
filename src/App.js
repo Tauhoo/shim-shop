@@ -7,6 +7,7 @@ import DetailSection from "./components/DetailSection"
 import CallList from "./components/CallList"
 import Sponsers from "./components/Sponsers"
 import Footer from "./components/Footer"
+import NavbarMobile from "./components/NavbarMobile"
 
 import fetchData from "./utils/fetch"
 
@@ -29,10 +30,15 @@ export default class extends Component {
     return (
       <div>
         <Navbar navbarItems={navbarItems}></Navbar>
+        <NavbarMobile></NavbarMobile>
         <Banner style={{ marginTop: "60px" }}></Banner>
         <BodyContainer>
           <RegisterSection duration={duration}></RegisterSection>
-          <DetailSection detail={detail} condition={condition}></DetailSection>
+          <DetailSection
+            style={{ marginTop: "40px" }}
+            detail={detail}
+            condition={condition}
+          ></DetailSection>
           <CallList style={{ marginTop: "100px" }}></CallList>
           <Sponsers style={{ margin: "80px 0px" }}></Sponsers>
         </BodyContainer>
